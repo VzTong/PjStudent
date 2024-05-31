@@ -1,0 +1,38 @@
+﻿@using PjStudent.ViewModels
+@model IEnumerable<PjStudent.Models.AppStudent>
+
+<a asp-action="CreateStudent" class="btn btn-outline-success my-3">Add New</a>
+
+<div class="row my-6">
+	<div class="col">
+		@foreach (var p in Model)
+		{
+			<table class="table">
+				<thead>
+
+					<tr>
+						<th scope="col">CodeID</th>
+						<th scope="row">Full Name</th>
+						<th scope="row">Birth Year</th>
+						<th scope="row">Home Town</th>
+						<th scope="row">Phone Number</th>
+						<th scope="row">Avatar</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="col">@p.CodeID</th>
+						<th scope="row">@p.FullName</th>
+						<th scope="row">@p.BirthYear</th>
+						<th scope="row">@p.HomeTown</th>
+						<th scope="row">@p.PhoneNumber</th>
+						<th scope="row">
+							<img src="@p.Avatar" width="100px" />
+						</th>
+					</tr>
+				</tbody>
+			</table>
+		}
+
+	</div>
+</div>

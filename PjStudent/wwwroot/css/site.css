@@ -1,0 +1,85 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+
+/*Phần css của hộp lựa chọn năm sinh*/
+.ui-datepicker {
+    width: 30%; /* Đặt chiều rộng tối đa */
+    background: #fff; /* Màu nền trắng */
+    border: 1px solid #ddd; /* Viền mỏng màu xám nhạt */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Bóng đổ nhẹ */
+    overflow: hidden; /* Ẩn các phần tử ngoài viền */
+}
+
+    .ui-datepicker .ui-datepicker-header {
+        background-color: #f7f7f7; /* Màu nền cho phần header */
+        line-height: 40px; /* Chiều cao dòng cho phần header */
+        text-align: center; /* Căn giữa nội dung header */
+    }
+
+    .ui-datepicker .ui-datepicker-title {
+        font-weight: bold; /* Chữ đậm cho tiêu đề */
+    }
+
+    /* Ẩn các nút điều hướng tháng và năm nếu không cần thiết */
+    .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+        display: none;
+    }
+
+    /* Tùy chỉnh nút 'Today' và 'Close' */
+    .ui-datepicker .ui-datepicker-buttonpane button {
+        color: black; /* Màu sắc cho nút */
+        background-color: #f8f9fa; /* Màu nền cho nút */
+        border-color: #f8f9fa;  /*Màu viền cho nút */
+        text-transform: uppercase; /* Chữ hoa cho nút */
+        margin: 5px; /* Khoảng cách xung quanh nút */
+        /*padding: 5px 10px;*/ /* Đệm cho nút */
+        cursor: pointer; /* Con trỏ chuột khi di chuyển vào nút */
+    }
+
+        /* Tùy chỉnh khi hover vào nút */
+        .ui-datepicker .ui-datepicker-buttonpane button:hover {
+            background-color: #e2e6ea; /* Màu nền khi hover */
+            border-color: #dae0e5; /* Màu viền khi hover */
+        }
+
+.ui-datepicker-calendar {
+    display: none; /* Ẩn bảng lịch */
+}
+
+.ui-datepicker-month {
+    display: none; /* Ẩn lựa chọn tháng */
+}
+
+.ui-datepicker-prev, .ui-datepicker-next {
+    display: none; /* Ẩn các nút điều hướng tháng */
+}
+
+.ui-datepicker .ui-datepicker-header {
+    text-align: center; /* Căn giữa tiêu đề */
+}
+
+.ui-datepicker-year {
+    color: #555; /* Màu sắc cho phần chọn năm */
+    font-size: 1.2em; /* Kích thước font cho phần chọn năm */
+}
